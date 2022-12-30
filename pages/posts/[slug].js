@@ -1,7 +1,9 @@
 // slug is a unique human readable ID and search engine friendly
 
-function PostDetailsPage() {
+import PostContent from "../../components/posts/post-detail/post-content"
 
+function PostDetailsPage() {
+    return <PostContent />
 }
 
 export default PostDetailsPage
