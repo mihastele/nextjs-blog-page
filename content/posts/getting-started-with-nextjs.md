@@ -19,3 +19,12 @@ How are you? I am fine
 ### subsubtile
 
 ![Create router](nextjs-file-based-routing.png)
+
+
+```js
+    const id = document.getElementById("id-of-the-element")
+    const id1 = document.getElementById("id-of-the-element")
+    const id2 = document.getElementById("id-of-the-element")
+    const id3 = document.getElementById("id-of-the-element")
+    const id4 = document.getElementById("id-of-the-element")
+```
