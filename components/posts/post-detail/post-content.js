@@ -6,16 +6,7 @@ const DUMMY_POST = {
     slug: "getting-started",
     title: "Getting started",
     image: "elkfefe.png",
-    content: `# Hello
-    
-How are you? I am fine
-
-- cow
-- beef
-- pig
-- pork
-
-    `,
+    content: ``,
     date: "2022-02-10"
 }
 
