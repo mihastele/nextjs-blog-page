@@ -22,6 +22,6 @@ export default function handler(req, res) {
       message
     }
 
-    res.status(201)
+    res.status(201).json({ message: 'Thank you for sending a message' })
   }
 }
