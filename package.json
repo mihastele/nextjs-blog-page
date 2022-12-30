@@ -6,12 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "startglob": "next dev -H 0.0.0.0 -p 3000",
     "lint": "next lint"
   },
   "dependencies": {
     "@next/font": "13.1.1",
-    "eslint": "8.30.0",
-    "eslint-config-next": "13.1.1",
     "next": "13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
