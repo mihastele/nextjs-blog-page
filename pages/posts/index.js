@@ -1,7 +1,9 @@
 import Link from "next/link"
 import Logo from "../../components/layout/logo"
 import AllPosts from "../../components/posts/all-posts"
+import { getAllPosts } from "../../lib/posts-util"
 
+/*
 const DUMMY_POSTS = [{
     slug: "getting-started",
     title: "Getting started",
@@ -23,10 +25,21 @@ const DUMMY_POSTS = [{
     excerpt: "SSsdWDWD asdasd sadasff asfdfweq fwfdwqWw",
     date: "2022-02-10"
 }]
+*/
 
-function AllPoststPage() {
-    return <AllPosts posts={DUMMY_POSTS} />
+function AllPoststPage(props) {
+    return <AllPosts posts={props.posts} />
+}
 
+export function getStaticProps() {
+    const featuredPosts = getAllPosts()
+
+    return {
+        props: {
+            posts: featuredPosts
+        },
+        // revalidate: 3600 // We need to redeploy anyway
+    }
 }
 
 export default AllPoststPage

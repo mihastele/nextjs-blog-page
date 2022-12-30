@@ -2,21 +2,16 @@ import classes from './post-content.module.css'
 import PostHeader from './post-header'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 
-const DUMMY_POST = {
-    slug: "getting-started",
-    title: "Getting started",
-    image: "elkfefe.png",
-    content: ``,
-    date: "2022-02-10"
-}
 
-function PostContent() {
+function PostContent(props) {
 
-    const imagePath = `/images/posts/${DUMMY_POST.slug}/${DUMMY_POST.image}`
+    const { post } = props
+
+    const imagePath = `/images/posts/${post.slug}/${post.image}`
 
     return <article className={classes.content}>
-        <PostHeader title={DUMMY_POST.title} image={imagePath} />
-        <ReactMarkdown>{DUMMY_POST.content}</ReactMarkdown>
+        <PostHeader title={post.title} image={imagePath} />
+        <ReactMarkdown>{post.content}</ReactMarkdown>
     </article>
 }
 
